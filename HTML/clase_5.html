@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style><meta charset="UTF-8">
+            <title>Tablas</title>
+            <style>
+                table {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                td {
+                    border: 1px solid black
+                }
+                th {
+                    border: 1px solid rgb(197, 165, 165)
+                }
+                .bloque {
+                    background-color: #266b75;
+                    
+                }
+                #importante {
+                    background-color: #df1b14; }
+                
+                }
+                #cubo {
+                    background-color: #148edf;
+                }</style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clase 5</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Tabla: Básica</h3>
+        <table>
+            <tr>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Fusión columnas</h3>
+        <table>
+            <tr>
+                <td colspan="2" >Fusión (uno y dos)</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Fusión filas</h3>
+        <table>
+            <tr>
+                <td rowspan="2" >Fusión (uno y 4)</td>
+                <td>dos</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Encabezado</h3>
+        <table>
+            <tr>
+                <th>C1</th>
+                <th>C2</th>
+                <th>C3</th>
+            </tr>
+            <tr>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Leyenda</h3>
+        
+        <table>
+            <colgroup class="bloque" span="2"></colgroup>
+            <colgroup id="importante" span="1"></colgroup>
+            <caption>Leyenda de la tabla</caption>
+            <tr>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Estilos por columnas</h3>
+        <table>
+            <colgroup class="bloque" span="2"></colgroup>
+            <colgroup id="importante" span="1"></colgroup>
+            <tr>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+        </table>
+    
+        <h3>Tabla: Semántica</h3>
+        <table>
+            <colgroup class="bloque" span="1"></colgroup>
+            <colgroup id="importante" span="1"></colgroup>
+            <colgroup class="cubo" span="3"></colgroup>
+            <caption>Leyenda de la tabla</caption>
+            <thead>
+                <tr>
+                    <th>D1</th>
+                    <th>D2</th>
+                    <th>D3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>         
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" >Pie de tabla</td>
+                </tr>            
+            </tfoot>
+        </table>
+    
+        <h3>Tabla: Gestión de huecos</h3>
+        <table>
+            <tr>
+                <td>uno</td>
+                <td><!-- CORRECTO --></td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <!-- INCORRECTO 
+                    W3C Validator: "A table row was 2 columns wide, 
+                    which is less than the column count established 
+                    by the first row (3)."
+                -->
+                <td>6</td>
+            </tr>
+        </table>
+        <table>
+            <caption>La lucha del poder</caption>
+            <thead>
+                <tr>
+                    <th>Escalera 1</th>
+                    <th>Escalera 2</th>
+                    <th>Escalera 3</th>
+                    <th>Escalera 4</th>
+                   
+                </tr>           
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Escalon 1</th>
+                    <th>Escalon 2</th>
+                    <th>Escalon 3</th>
+                    <th>Escalon 4</th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"  > Pies de la casa</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+        <script src="" async defer></script>
+    </body>
+</html>

@@ -13,20 +13,25 @@
         <meta name="description" content="Curso HTML">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style/style.css" type="text/css"> 
-    </head>
+        
+      </head>
     <body>
+      <p>
+        En caso de emergencia... <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Supr</kbd>
+      </p>
         <nav>
             <p>
-              Elemento 1 |
+             <kbd> Elemento 1 |
               Elemento 2 |
               Elemento 3 |
-              Elemento 4 | <hr>
+              Elemento 4 | </kbd><hr>
             </p>
           </nav>
           <p><a href="curso_frontend_html5_css3.html">¡Nuestro Curso!</a></p>
           <p><a href=Nuestro_espacio.html>Visitanos</a></p>
           <p><a href=blockquote.html>Blockquote y Q</a></p>
-
+<p><a href=clase_4.html>clase 4</a></p>
+<p><a href=clase_5.html>clase 5</a></p>
           <article>
             <h1>Usando &lt;header&gt;...</h1>
             <header>
@@ -86,10 +91,34 @@
               <h6>Cabecera H6</h6>
               <p>Párrafo...</p><hr>
               <p><strong>Quijotipsum</strong><span>(pronunciado kijotipsum)</span> es un generador de texto basado en El Quijote (el de los molinos) al más puro estilo Lorem Ipsum (texto en una lengua que está algo deprecated).</p>
-        <script src="" async defer></script>
-        <h1>Hola mundo.js</h1>
+              <h1><time>Mañana</time> es Viernes!</h1>
+        <p>El año empezo <time datetime="2021-01-20 11:06:01">El primer día del año</time>.</p>
+        <var>saludo</var>
+      </p>
+      <pre>
         <code>
-          console.info("Hola Mundo!")
+          var saludo = "Hola Mundo!";
+          console.info(saludo);
         </code>
-    </body>
+      </pre>
+      </body>
 </html>
+<style>
+  /*
+    Estilos de MDN
+  */
+  kbd {
+      background-color: #1491bb;
+      border-radius: 3px;
+      border: 1px solid #bb2020;
+      box-shadow: 0 1px 1px rgba(29, 95, 218, 0.2),
+                  0 2px 0 0 rgba(92, 68, 68, 0.7)inset;
+      display: inline-block;
+      font-family: Consolas,"Liberation Mono",Courier,monospace;
+      font-size: .85em;
+      font-weight: 700;
+      line-height: inherit;
+      padding: 2px 4px;
+      white-space: nowrap;
+  }
+</style>
